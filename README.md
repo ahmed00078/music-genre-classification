@@ -156,7 +156,7 @@ If you need to retrain the models:
 1. **SVM Training**:
    - Run the training script:
      ```bash
-     python models_train/train_svm.py
+     python models_train/train.py
      ```
 
 2. **VGG19 Training**:
