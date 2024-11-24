@@ -21,17 +21,3 @@ Model saved in 0.01 seconds
 Total SVM training time: 812.64 seconds
 
 Total script execution time: 812.64 seconds
-
-Model saved in 0.01 seconds
-
-Total SVM training time: 812.64 seconds
-
-Model saved in 0.01 seconds
-
-Model saved in 0.01 seconds
-Model saved in 0.01 seconds
-Model saved in 0.01 seconds
-
-Total SVM training time: 812.64 seconds
-
-Total script execution time: 812.64 seconds
