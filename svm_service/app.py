@@ -11,9 +11,9 @@ app = Flask(__name__)
 
 # Load pre-trained SVM model and scaler
 def load_svm_model():
-    with open('../models_train/models/svm_model.pkl', 'rb') as f:
+    with open('/app/models/svm_model.pkl', 'rb') as f:
         model = pickle.load(f)
-    with open('../models_train/models/svm_scaler.pkl', 'rb') as f:
+    with open('/app/models/svm_scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
     return model, scaler
 

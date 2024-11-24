@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 # Load the pre-trained VGG19 model and label encoder
 def load_vgg19_model():
-    model = load_model('../models_train/models/vgg19_model.h5')
-    with open('../models_train/models/vgg19_label_encoder.pkl', 'rb') as f:
+    model = load_model('/app/models/vgg19_model.h5')
+    with open('/app/models/vgg19_label_encoder.pkl', 'rb') as f:
         label_encoder = pickle.load(f)
     return model, label_encoder
 
@@ -64,7 +64,6 @@ def create_spectrogram(audio_data):
             (224, 224)
         )
         spectrogram_rgb = np.repeat(resized_spectrogram, 3, axis=-1)  # Convert grayscale to RGB
-        print("spectrogram_rgb",spectrogram_rgb)
         return spectrogram_rgb
 
     except Exception as e:
