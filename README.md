@@ -8,6 +8,33 @@ The project is structured as a microservices-based application, leveraging Docke
 
 ---
 
+## **Dataset**
+The project uses the **GTZAN Genre Dataset**, a popular dataset for music genre classification. It contains:
+- **10 Genres**: *blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock*.
+- **1,000 Audio Files**: Each genre has 100 audio tracks.
+- **File Format**: WAV files, each 30 seconds long.
+- **Sample Rate**: 22,050 Hz.
+
+The dataset serves as the foundation for training both the SVM and VGG19 models. Audio features such as **MFCCs** and **mel spectrograms** are extracted during preprocessing.
+
+---
+
+## **Predictions: SVM vs. VGG19**
+
+Below is an example of predictions from both models for a single audio file:
+
+| **Model**       | **Predicted Genre** | **Confidence Score** |
+|------------------|---------------------|-----------------------|
+| **SVM**         | Jazz                | 73.22%                  |
+| **VGG19**       | Jazz                | 99.73%                  |
+
+### **Predictions Displayed in the Frontend**
+![Predictions Example](images/predictions_example.png)
+
+The frontend displays predictions and confidence scores from both models, allowing users to compare results directly.
+
+---
+
 ## **Features**
 - Upload audio files (WAV format) via a **Streamlit frontend**.
 - Predict genres using:
