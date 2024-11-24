@@ -1,0 +1,64 @@
+Total data preparation time: 69.08 seconds
+
+Encoding labels...
+Label encoding complete in 0.00 seconds
+
+Splitting data...
+Data split complete in 0.39 seconds
+
+Creating VGG19 model...
+Model creation complete in 0.67 seconds
+
+Compiling model...
+Model compilation complete in 0.01 seconds
+
+Training VGG19 model...
+Epoch 1/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 229s 9s/step - accuracy: 0.2034 - loss: 2.9506 - val_accuracy: 0.5350 - val_loss: 1.3904
+Epoch 2/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 249s 10s/step - accuracy: 0.4673 - loss: 1.5370 - val_accuracy: 0.6000 - val_loss: 1.2332
+Epoch 3/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 304s 12s/step - accuracy: 0.5499 - loss: 1.2274 - val_accuracy: 0.6450 - val_loss: 1.1198
+Epoch 4/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 259s 10s/step - accuracy: 0.6324 - loss: 1.0912 - val_accuracy: 0.6650 - val_loss: 1.0447
+Epoch 5/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 282s 11s/step - accuracy: 0.6613 - loss: 0.9617 - val_accuracy: 0.6750 - val_loss: 1.0115
+Epoch 6/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 246s 10s/step - accuracy: 0.6796 - loss: 0.8978 - val_accuracy: 0.5850 - val_loss: 1.1049
+Epoch 7/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 242s 10s/step - accuracy: 0.6864 - loss: 0.8390 - val_accuracy: 0.6750 - val_loss: 1.0004
+Epoch 8/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 241s 10s/step - accuracy: 0.7248 - loss: 0.7937 - val_accuracy: 0.7000 - val_loss: 0.9250
+Epoch 9/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 242s 10s/step - accuracy: 0.7379 - loss: 0.7749 - val_accuracy: 0.6600 - val_loss: 0.9677
+Epoch 10/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 254s 10s/step - accuracy: 0.7612 - loss: 0.6877 - val_accuracy: 0.6300 - val_loss: 1.0078
+Epoch 11/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 252s 10s/step - accuracy: 0.7438 - loss: 0.7260 - val_accuracy: 0.7000 - val_loss: 0.9110
+Epoch 12/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 254s 10s/step - accuracy: 0.7783 - loss: 0.6733 - val_accuracy: 0.7100 - val_loss: 0.8990
+Epoch 13/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 1489s 62s/step - accuracy: 0.8044 - loss: 0.5961 - val_accuracy: 0.7000 - val_loss: 0.8923
+Epoch 14/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 201s 8s/step - accuracy: 0.7893 - loss: 0.5896 - val_accuracy: 0.6800 - val_loss: 0.8934
+Epoch 15/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 200s 8s/step - accuracy: 0.7896 - loss: 0.5856 - val_accuracy: 0.6850 - val_loss: 0.8929
+Epoch 16/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 203s 8s/step - accuracy: 0.8120 - loss: 0.5260 - val_accuracy: 0.6700 - val_loss: 0.8953
+Epoch 17/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 218s 9s/step - accuracy: 0.8215 - loss: 0.5336 - val_accuracy: 0.7250 - val_loss: 0.8446
+Epoch 18/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 216s 9s/step - accuracy: 0.8484 - loss: 0.4756 - val_accuracy: 0.7100 - val_loss: 0.8824
+Epoch 19/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 214s 9s/step - accuracy: 0.8399 - loss: 0.4535 - val_accuracy: 0.6950 - val_loss: 0.8444
+Epoch 20/20
+25/25 ━━━━━━━━━━━━━━━━━━━━ 213s 9s/step - accuracy: 0.8685 - loss: 0.4233 - val_accuracy: 0.6850 - val_loss: 0.8814
+Model training complete in 6009.43 seconds
+
+Saving model and encoder...
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+Model saved in 0.34 seconds
+
+Total VGG19 training time: 6080.32 seconds
+
+Total script execution time: 6080.54 seconds

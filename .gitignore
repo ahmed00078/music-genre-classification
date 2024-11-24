@@ -1,0 +1,4 @@
+# Ignore large files
+data/
+*.log
+*.wav

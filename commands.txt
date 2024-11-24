@@ -1,0 +1,40 @@
+python -m streamlit run front.py
+python app.py
+python train.py
+
+
+
+Running the Services:
+
+
+# Build and start all services
+docker-compose up --build
+
+# Or to run in detached mode
+docker-compose up -d --build
+
+# To check logs
+docker-compose logs -f
+
+# To stop services
+docker-compose down
+
+
+
+Useful Docker Commands:
+
+
+# Check running containers
+docker ps
+
+# Check container logs
+docker logs <container_id>
+
+# Enter a container shell
+docker exec -it <container_id> bash
+
+# Remove all stopped containers
+docker container prune
+
+# Remove all unused images
+docker image prune

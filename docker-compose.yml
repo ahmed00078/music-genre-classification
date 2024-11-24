@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  svm-service:
+    build: 
+      context: ./svm_service
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./models_train/models:/app/models  # Mount models directory
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+
+  vgg19-service:
+    build: 
+      context: ./vgg19_service
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./models_train/models:/app/models  # Mount models directory
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - SVM_SERVICE_URL=http://svm-service:5001
+      - VGG19_SERVICE_URL=http://vgg19-service:5002
+    depends_on:
+      - svm-service
+      - vgg19-service

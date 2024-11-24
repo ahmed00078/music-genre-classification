@@ -1,0 +1,4 @@
+docker build -t svm-service .
+
+docker run -d -p 5001:5001 --name svm-service svm-service
+
