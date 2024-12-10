@@ -78,30 +78,6 @@ pipeline {
                 }
             }
         }
-
-        stage('Deploy to Azure') {
-            steps {
-                script {
-                    // Deploy the containers to Azure Container Instances (or other service like AKS)
-                    sh '''
-                    # Deploy the Frontend
-                    az container create --resource-group MusicGenreGroup --name music-genre-frontend \
-                    --image ${REGISTRY_NAME}-frontend \
-                    --ports 8501
-
-                    # Deploy the SVM service
-                    az container create --resource-group MusicGenreGroup --name music-genre-svm-service \
-                    --image ${REGISTRY_NAME}-svm-service \
-                    --ports 5001
-
-                    # Deploy the VGG19 service
-                    az container create --resource-group MusicGenreGroup --name music-genre-vgg19-service \
-                    --image ${REGISTRY_NAME}-vgg19-service \
-                    --ports 5002
-                    '''
-                }
-            }
-        }
     }
 
     post {
