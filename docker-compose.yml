@@ -4,7 +4,7 @@ services:
   svm-service:
     build: 
       context: ./svm_service
-      dockerfile: Dockerfilet
+      dockerfile: Dockerfile
     image: ahmed20078/svm-service:latest
     ports:
       - "5001:5001"
