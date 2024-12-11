@@ -4,7 +4,8 @@ services:
   svm-service:
     build: 
       context: ./svm_service
-      dockerfile: Dockerfile
+      dockerfile: Dockerfilet
+    image: ahmed20078/svm-service
     ports:
       - "5001:5001"
     volumes:
@@ -17,6 +18,7 @@ services:
     build: 
       context: ./vgg19_service
       dockerfile: Dockerfile
+    image: ahmed20078/vgg19-service
     ports:
       - "5002:5002"
     volumes:
@@ -29,6 +31,7 @@ services:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
+    image: ahmed20078/devops-frontend
     ports:
       - "8501:8501"
     environment:
